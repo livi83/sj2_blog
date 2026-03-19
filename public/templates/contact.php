@@ -71,6 +71,10 @@ include 'partials/header.php';
 						</div>
 					</form>
 
+          <?php
+            saveMessage();
+          ?>
+
 				</div><!--contact-information-->
 
 			</div><!--col-md-6-->
