@@ -1,16 +1,6 @@
 <?php
-function getTitle():string{
-    // public/templates/index.php 
-    // basename ... index.php
-    //ucfirst ...Index.php
-    $page = ucfirst(basename($_SERVER['SCRIPT_NAME'],'.php'));
-    return 'TechBlog - '.$page;
-}
 
-function redirect($url){
-    header('Location: '.$url);
-    exit;
-}
+
 
 function saveMessage(){
 

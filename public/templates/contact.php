@@ -72,7 +72,18 @@ include 'partials/header.php';
 					</form>
 
           <?php
-            saveMessage();
+          if($_SERVER['REQUEST_METHOD']==='POST'){
+
+            $db = new Database();
+            $connection = $db->getConnection();
+
+            $contact = new Contact($connection,$_POST);
+
+            if($contact->store()){
+                echo 'Formulár bol odoslaný';
+            }
+          }
+            
           ?>
 
 				</div><!--contact-information-->
