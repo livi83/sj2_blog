@@ -1,5 +1,5 @@
 <?php
-	require_once '../../app/functions.php';
+	//require_once '../../app/functions.php';
 	require_once '../../app/core/Helper.php';
 	require_once '../../app/core/Database.php';
 	require_once '../../app/models/Contact.php';
